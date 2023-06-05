@@ -16,4 +16,4 @@ app.get('/', (req, res) => {
   res.status(200).json({ message: "Hello from DALL.E" })
 })
 
-app.listen(8080, () => console.log('listening on port 8080'))
+app.listen(process.env.PORT, () => console.log(`listening on port ${process.env.PORT}`))
